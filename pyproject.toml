@@ -1,0 +1,44 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "aethersphere"
+version = "1.0.0"
+description = "AetherSphere: 3D Spatial Photo Universe & Generative Dual-Asset NFT Studio on Robinhood Chain (ID: 4663)"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [
+    { name = "Maximus", email = "maximus@voidride.art" }
+]
+keywords = [
+    "threejs",
+    "webgl",
+    "nft",
+    "robinhood-chain",
+    "arbitrum-orbit",
+    "generative-art",
+    "photogrammetry",
+    "spatial-computing",
+    "erc721"
+]
+dependencies = [
+    "fastapi>=0.110.0",
+    "uvicorn>=0.28.0",
+    "pydantic>=2.6.0",
+    "httpx>=0.27.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0.0",
+    "pytest-cov>=4.1.0",
+    "pytest-asyncio>=0.23.0",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+asyncio_mode = "auto"
+addopts = "--cov=backend --cov-report=term-missing"
