@@ -4,11 +4,41 @@
 [![Chain ID](https://img.shields.io/badge/Chain_ID-4663_(0x1237)-FF007F?style=for-the-badge)](https://rpc.mainnet.chain.robinhood.com)
 [![Three.js](https://img.shields.io/badge/Three.js-WebGL_3D_Engine-049EF4?style=for-the-badge&logo=three.js)](https://threejs.org/)
 [![FastAPI](https://img.shields.io/badge/FastAPI-Modern_Lifespan-009688?style=for-the-badge&logo=fastapi)](https://fastapi.tiangolo.com)
+[![Upstream: flickrtag](https://img.shields.io/badge/Upstream-flickrtag-FF0084?style=for-the-badge&logo=flickr)](https://github.com/maximusmaximus/flickrtag)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](LICENSE)
 
 > **AetherSphere** is an interactive 3D spatial photogrammetry universe, generative composition studio, and dual-asset NFT minting platform built on the **Robinhood Chain** (Arbitrum Orbit / Nitro L2, Chain ID: `4663`).
 > 
 > Explore archives of historical photography mapped across 4-dimensional spatial projections, craft multi-exposure composite artworks via algorithmic canvas shaders, generate synchronized 10-second cinematic video loops, and mint them into curated supply-capped category pools with complete on-chain provenance.
+
+---
+
+## 🧬 Upstream Lineage & Ecosystem: `flickrtag`
+
+AetherSphere operates in tandem with its sister project, [**`maximusmaximus/flickrtag`**](https://github.com/maximusmaximus/flickrtag) — the automated Flickr photo autotagging and vision curation engine.
+
+```text
+┌─────────────────────────────────────────────────────────────┐
+│                 MAXIMUSMAXIMUS / FLICKRTAG                  │
+│  Flickr API ──> Venice AI Vision ──> AI Tags & Descriptions │
+│  Reverse Geocoding (Nominatim) ──> SQLite state.db          │
+└──────────────────────────────┬──────────────────────────────┘
+                               │
+                               ▼
+┌─────────────────────────────────────────────────────────────┐
+│                MAXIMUSMAXIMUS / AETHERSPHERE                │
+│  4D Coordinate Transformations (Globe, Cosmos, Torus, Helix)│
+│  Three.js WebGL Interactive Viewport                        │
+│  Generative Canvas Stitching Studio (Poisson, Voronoi)      │
+│  10-Second Looping Video Synthesis                          │
+│  Robinhood Chain (ID: 4663) ERC-721A Dual-Asset NFT Minting │
+└─────────────────────────────────────────────────────────────┘
+```
+
+### How They Connect:
+- **Direct Bridge**: When running on a machine with `flickr-autotagger` configured, AetherSphere reads directly from `~/.flickr-autotagger/state.db`, providing instant 3D exploration and composition for all **15,769 Flickr photographs**, **314,294 Venice AI vision tags**, and **902 GPS geocoded coordinates**.
+- **Autonomous Fallback**: When cloned on standalone environments without `flickrtag` present, AetherSphere automatically bootstraps a self-contained sample archive (`sample_archive.db`) so all 3D viewports, canvas composition tools, and Robinhood Chain minting features work immediately with zero dependencies.
+- **Learn More**: Visit [**maximusmaximus/flickrtag**](https://github.com/maximusmaximus/flickrtag) for Flickr authentication, CLI batch processing, Venice AI tag generation, and photoset synchronization.
 
 ---
 

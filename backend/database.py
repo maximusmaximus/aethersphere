@@ -1,7 +1,10 @@
-"""Database layer for AETHER-FLICKR.
+"""Database layer for AetherSphere.
 
-Provides read-only queries against the 15,769 Flickr photo dataset in state.db,
-and read/write persistence for pools, compositions, and mints in local aether.db.
+Consumes archival Flickr photography and Venice AI vision metadata produced by
+the upstream flickrtag project (https://github.com/maximusmaximus/flickrtag).
+Provides read-only queries against state.db (15,769 photos, 314k tags, 902 GPS records)
+with an automatic self-seeding sample fallback, and read/write persistence for pools,
+compositions, and Robinhood Chain mints in local aether.db.
 """
 
 from __future__ import annotations

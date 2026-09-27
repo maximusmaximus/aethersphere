@@ -91,8 +91,12 @@
       </button>
     </nav>
 
-    <!-- Wallet Connect -->
-    <div class="flex items-center space-x-3">
+    <!-- Wallet Connect & Upstream Repo -->
+    <div class="flex items-center space-x-2">
+      <a href="https://github.com/maximusmaximus/flickrtag" target="_blank" rel="noopener" class="hidden sm:flex items-center space-x-1.5 px-3 py-1.5 rounded-lg font-mono text-xs text-slate-300 bg-white/5 hover:bg-white/10 hover:text-[#00f0ff] border border-white/10 transition" title="Upstream Flickr Vision & Autotagging Pipeline">
+        <i data-lucide="git-branch" class="w-3.5 h-3.5 text-[#ff007a]"></i>
+        <span>flickrtag</span>
+      </a>
       <button id="wallet-btn" onclick="toggleWalletConnect()" class="px-4 py-1.5 rounded-lg font-mono text-xs font-semibold bg-gradient-to-r from-emerald-500/10 to-emerald-500/5 border border-emerald-500/30 hover:border-emerald-400 transition flex items-center space-x-2">
         <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
         <span id="wallet-address-display">0x9a3B...81F2 (Robinhood)</span>
@@ -583,12 +587,18 @@
               <!-- Tags -->
             </div>
           </div>
-          <div class="pt-2 border-t border-white/10 flex items-center justify-between text-slate-400 font-mono">
+          <div class="pt-2 border-t border-white/10 flex items-center justify-between text-slate-400 font-mono text-[11px]">
             <span id="detail-modal-location">Portland, OR</span>
-            <a id="detail-modal-flickr-link" href="#" target="_blank" class="text-[#00f0ff] hover:underline flex items-center space-x-1">
-              <span>View on Flickr</span>
-              <i data-lucide="external-link" class="w-3 h-3"></i>
-            </a>
+            <div class="flex items-center space-x-3">
+              <a href="https://github.com/maximusmaximus/flickrtag" target="_blank" rel="noopener" class="text-slate-400 hover:text-[#00f0ff] flex items-center space-x-1" title="Vision tagged via flickrtag pipeline">
+                <i data-lucide="sparkles" class="w-3 h-3 text-[#ff007a]"></i>
+                <span>flickrtag AI</span>
+              </a>
+              <a id="detail-modal-flickr-link" href="#" target="_blank" class="text-[#00f0ff] hover:underline flex items-center space-x-1">
+                <span>View on Flickr</span>
+                <i data-lucide="external-link" class="w-3 h-3"></i>
+              </a>
+            </div>
           </div>
         </div>
       </div>
