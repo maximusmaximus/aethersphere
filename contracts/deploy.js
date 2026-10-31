@@ -1,7 +1,7 @@
 /**
  * Deployment script for Robinhood Chain (Chain ID: 4663)
  * Target RPC: https://rpc.mainnet.chain.robinhood.com
- * Explorer: https://explorer.chain.robinhood.com
+ * Explorer: https://robinhoodchain.blockscout.com
  */
 
 const hre = require("hardhat");
@@ -18,7 +18,7 @@ async function main() {
 
   const contractAddress = await contract.getAddress();
   console.log("✅ RobinhoodCompositeNFT deployed to:", contractAddress);
-  console.log("Explorer link:", `https://explorer.chain.robinhood.com/address/${contractAddress}`);
+  console.log("Explorer link:", `https://robinhoodchain.blockscout.com/address/${contractAddress}`);
 }
 
 main().catch((error) => {
