@@ -1,6 +1,6 @@
 # 🌌 AetherSphere
 
-[![Robinhood Chain](https://img.shields.io/badge/Robinhood_Chain-Arbitrum_Orbit_L2-00E5FF?style=for-the-badge&logo=ethereum)](https://explorer.chain.robinhood.com)
+[![Robinhood Chain](https://img.shields.io/badge/Robinhood_Chain-Arbitrum_Orbit_L2-00E5FF?style=for-the-badge&logo=ethereum)](https://robinhoodchain.blockscout.com)
 [![Chain ID](https://img.shields.io/badge/Chain_ID-4663_(0x1237)-FF007F?style=for-the-badge)](https://rpc.mainnet.chain.robinhood.com)
 [![Three.js](https://img.shields.io/badge/Three.js-WebGL_3D_Engine-049EF4?style=for-the-badge&logo=three.js)](https://threejs.org/)
 [![FastAPI](https://img.shields.io/badge/FastAPI-Modern_Lifespan-009688?style=for-the-badge&logo=fastapi)](https://fastapi.tiangolo.com)
@@ -148,7 +148,7 @@ $$z = R \sin(2\pi N \tau)$$
 | **Decimals** | 18 |
 | **Settlement Layer** | Ethereum Mainnet via Arbitrum Orbit (Nitro Stack) |
 | **JSON-RPC Endpoint** | `https://rpc.mainnet.chain.robinhood.com` |
-| **Block Explorer** | [https://explorer.chain.robinhood.com](https://explorer.chain.robinhood.com) |
+| **Block Explorer** | [https://robinhoodchain.blockscout.com](https://robinhoodchain.blockscout.com) |
 
 ---
 
